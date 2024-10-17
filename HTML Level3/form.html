@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/action">
+        <input type="text" placeholder="enter username">
+        <br>
+        <input type="password" placeholder="enter password">
+        <br>
+        <input type="number" placeholder="enter contact number">
+        <br>
+        <input type="date" placeholder="enter date">
+        <br>
+        <input type="color" placeholder="enter color">
+    </form>
+    <hr>
+
+    <form action="/server">
+        <label for="username">enter username</label>
+        <input type="text" placeholder="username" id="username">
+        <br>
+        <label for="password">enter password</label>
+        <input type="password" placeholder="password" id="password">
+        <br>
+        <label for="DOB">enter date of birth</label>
+        <input type="date" placeholder="DOB" id="DOB">
+        <br>
+        <label for="contact number">enter contact number</label>
+        <input type="number" placeholder="contact number" id="contact number">
+        <br>
+        <label for="email">enter email</label>
+        <input type="email" placeholder="email" id="email">
+        <br>
+        <div>
+            <input type="checkbox" name="age" id="age" checked>
+            <label for="age">I am 18+</label>
+        </div>
+        <br>
+        <div>
+            <p>Gender</p>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="other" value="other">    
+            <label for="other">other</label>
+        </div>
+        <br>
+        <div>
+            <p>choose your profession</p>
+            <select name="profession" id="profession">
+                <option value="student">student</option>
+                <option value="dev">developer</option>
+                <option value="farmer">farmer</option>
+                <option value="businessman">businessman</option>
+                <option value="technician">technician</option>
+            </select>
+        </div><br>
+        <div>
+            <lable for="vol">select volume level</lable>
+            <input type="range" id="vol"min="0" max="100" name="vol" step="10"/>
+        </div>
+        <br>
+        <lable for="feedback">Please give your feedback</lable>
+        <textarea id="feedback" name="feedback" row="10" col="3"></textarea>
+        <button>submit</button>
+        <button>reset</button>
+    </form>
+    
+</body>
+</html>
